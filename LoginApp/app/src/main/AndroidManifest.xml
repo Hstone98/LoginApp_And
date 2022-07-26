@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginApp">
         <activity
+            android:name=".AvtNextPage"
+            android:exported="false" />
+        <activity
             android:name=".AtvSingUp"
             android:exported="true" />
         <activity
