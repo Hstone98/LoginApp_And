@@ -13,6 +13,8 @@ public class AtvMain extends AppCompatActivity {
 
     String exmpId = new String("id");
     EditText etId;
+    String exmpPW = new String("1111");
+    EditText etPW;
     Button btnLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class AtvMain extends AppCompatActivity {
     private void InitLayout()
     {
         etId = (EditText)findViewById(R.id.editID);
+        etPW = (EditText)findViewById(R.id.ediPassword);
         btnLogin = (Button)findViewById(R.id.loginbutton);
 
     }
@@ -37,7 +40,7 @@ public class AtvMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AtvMain.this, AvtNextPage.class);
-                if(exmpId.compareTo(etId.getText().toString())==0) {
+                if(exmpId.equals(etId.getText().toString()) && exmpPW.equals(etPW.getText().toString())) {
                     startActivity(intent);
                 }
                 else {
