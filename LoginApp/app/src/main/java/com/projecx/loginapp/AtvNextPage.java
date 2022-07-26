@@ -4,17 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AvtNextPage extends AppCompatActivity {
-
-
-
+public class AtvNextPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.avt_next_page);
+        setContentView(R.layout.atv_next_page);
     }
-
-
-
 }
