@@ -13,8 +13,7 @@ public class AtvMain extends AppCompatActivity {
     EditText editID;
     Button loginbutton;
     String logininfo = "asdf";
-
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
